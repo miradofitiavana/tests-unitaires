@@ -9,14 +9,14 @@ namespace APILibraryXUnit.Test
     public class Order : ValueObject
     {
         readonly Customer customer;
-        readonly Pizza pizza;
-        private Order(Customer customer, Pizza pizza)
+        readonly Pizza[] pizza;
+        private Order(Customer customer, Pizza[] pizza)
         {
             this.customer = customer;
             this.pizza = pizza;
         }
 
-        public static Result<Order> Create(Customer customer, Pizza pizza)
+        public static Result<Order> Create(Customer customer, Pizza[] pizza)
         {
             if (customer == null)
             {
