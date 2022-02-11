@@ -11,7 +11,6 @@ namespace WebApplication.Controllers
         public PizzasController(EatDbContext context) : base(context)
         {
         }
-
-       
+  
     }
 }

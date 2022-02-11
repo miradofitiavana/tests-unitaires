@@ -24,7 +24,7 @@ namespace APILibrary.Test
         {
             _db = MockDbContext.GetDbContext();
 
-          
+
             var httpContext = new DefaultHttpContext();
             _controller = new CustomersController(_db)
             {
@@ -151,7 +151,7 @@ namespace APILibrary.Test
 
             var okResult = result.Should().BeOfType<OkObjectResult>().Subject;
 
-           // _db.Customers.Count().Should().Be(values.Count());
+            // _db.Customers.Count().Should().Be(values.Count());
 
         }
         [Test]
@@ -167,7 +167,7 @@ namespace APILibrary.Test
 
             var okResult = result.Should().BeOfType<OkObjectResult>().Subject;
 
-          
+
 
         }
         /*
