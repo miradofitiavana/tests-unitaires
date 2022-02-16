@@ -10,8 +10,7 @@ namespace WebApplication.Models
 {
     public class Pizza : ModelBase
     {
-        //[Key]
-        //public int ID { get; set; }
+        [Required(ErrorMessage = "Le nom est obligatoire.")]
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Topping { get; set; }
